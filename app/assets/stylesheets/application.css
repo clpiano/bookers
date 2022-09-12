@@ -29,11 +29,13 @@ body {
 }
 
 #notice {
+  margin-bottom: 15px;
   color: green
 }
 
 h1 {
   display: block;
+  margin-top: 15px;
   margin-bottom: 20px;
   font-size: 2em;
   text-align: left;
@@ -94,4 +96,21 @@ h2 {
 .field {
     display: block;
     margin-bottom: 10px;
+}
+
+.show {
+    padding: 15px;
+    line-height: 4;
+}
+
+.edit {
+    line-height: 2;
+}
+
+.edit-acction {
+    margin-bottom: 10px;
+}
+
+ul {
+    padding: 15px;
 }

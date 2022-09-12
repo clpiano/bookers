@@ -1,18 +1,24 @@
 <body>
-  <p id="notice">Book was successfully created.</p>
+  <% if flash[:notice] %>
+    <p id="notice">
+      <%= flash[:notice] %>
+    </p>
+  <% end %>
 
-  <p>
-    <strong>Title:</strong>
-    <%= @book.title %>
-  </p>
+  <div class="show">
+    <p>
+      <strong>Title:</strong>
+      <%= @book.title %>
+    </p>
 
-  <p>
-    <strong>Body:</strong>
-    <%= @book.body %>
-  </p>
-  
-  <%= link_to "Edit", edit_book_path(@book.id) %>
-  | 
-  <a class="back" href="/books">Back</a>
+    <p>
+      <strong>Body:</strong>
+      <%= @book.body %>
+    </p>
+  </div>
+
+    <%= link_to "Edit", edit_book_path(@book.id) %>
+    |
+    <a class="back" href="/books">Back</a>
 
 </body>
